@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mainH {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.hypen {
+    font-size: 2.5rem;
+    font-weight: 700;
+    animation: blink 1s ease-in-out infinite forwards;
+}
+@keyframes blink {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.container {
+    padding-top: 1.5rem;
+}
+.contain {
+    width: 600px;
+    box-shadow: 0 5px 15px black;
+    border-radius: 20px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.head {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    cursor: default;
+    padding:0.3em;
+}
+.head h3 {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+.control {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    background-color: whitesmoke;
+}
+.control h2 {
+    font-size: 2rem;
+}
+.control h2:hover {
+    background-color: blue;
+    text-align: center;
+}
+.control h1 {
+    font-size: 1.8rem;
+}
+.body {
+    display: none;
+    cursor: default;
+}
+.days {
+    height: 400px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.days div {
+    font-size: 2rem;
+    text-align: center;
+}
+.dayS:hover {
+    background-color: red;
+}
+.selected {
+    background-color: green;
+}
